@@ -1,0 +1,75 @@
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$background-color: #a8d09e;
+
+body{
+    margin-top: 12%;
+}
+
+.WeatherApp {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: $background-color;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    label {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        color: $primary-color;
+    }
+
+    input {
+        width: 95%;
+        padding: 8px;
+        font-size: 14px;
+        border: 1px solid $primary-color;
+        border-radius: 4px;
+    }
+
+    button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #fff;
+        background-color: $primary-color;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+        background-color: darken($primary-color, 10%);
+        }
+    }
+
+    h1 {
+        font-size: 24px;
+        margin-top: 10px;
+        color: $secondary-color;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin-top: 5px;
+    }
+
+    p {
+        font-size: 16px;
+        margin-top: 5px;
+
+        sup {
+        font-size: 12px;
+        }
+    }
+
+    img {
+        max-width: 100%;
+        margin-top: 10px;
+    }
+}
